@@ -1,0 +1,158 @@
+
+  .App{
+    text-align: center;
+  }
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  } 
+
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+
+  .App-title {
+    font-size: 1.5em;
+  }
+
+  .App-intro {
+    font-size: large;
+  }
+
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .listStyleType{
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .radioContainer{
+    padding-bottom: 10px;
+  }
+
+  .showDropdown{
+    display: block;
+    width:30%;
+    border: 1px solid lightgray;
+    margin:0 20px  20px 20px;
+    padding: 0 10px;
+  }
+
+  .hideDropdown{
+    display: none;
+  }
+
+  input[type=checkbox]:not(old),
+  input[type=radio   ]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+  }
+
+  input[type=checkbox]:not(old) + label,
+  input[type=radio   ]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+  }
+
+  input[type=checkbox]:not(old) + label > span,
+  input[type=radio   ]:not(old) + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid lightgrey;
+    border-radius    : 0.25em;
+    background       : lightgrey;   
+    vertical-align   : bottom;
+  }
+
+  input[type=radio   ]:not(old) + label > span{
+    border-radius    : 100%;
+  }
+ 
+  input[type=checkbox]:not(old):checked + label > span:before{
+    content     : '✓';
+    display     : block;
+    width       : 1em;
+    color       : blue;
+    font-size   : 0.875em;
+    line-height : 1em;
+    text-align  : center;
+    text-shadow : 0 0 0.0714em lightgrey;
+    font-weight : bold;
+  }
+
+  input[type=radio]:not(old):checked + label > span > span{
+    display          : block;
+    width            : 0.5em;
+    height           : 0.5em;
+    margin           : 0.125em;
+    border           : 0.0625em solid blue;
+    border-radius    : 100%;
+    background       : blue;
+  
+  }
+
+  .multiSelectContainer{
+    text-align: left;
+  }
+
+  .inputContainer{
+    width: 30%;
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+  }
+
+  .inputContainer:before{
+    content     : '&#xf107';
+    display     : block;
+    width       : 1em;
+    color       : blue;
+    font-size   : 0.875em;
+    line-height : 1em;
+    text-align  : center;
+    text-shadow : 0 0 0.0714em lightgrey;
+    font-weight : bold;
+  }
+
+  .buttonContainer{
+    padding: 10px;
+    background-color: lightgrey;
+    margin: -10px -10px -15px -10px;
+  }
+
+  .styledSelect {
+    font-weight: bold;
+  }
+
+.styledSelect:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: blue transparent transparent transparent;
+  position: relative;
+  top: 12px;
+  right: 40px;
+}
+
+.liContainer{
+  height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.radioPosition{
+  padding-left: 40px;
+}

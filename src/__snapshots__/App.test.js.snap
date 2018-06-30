@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App | initial loading and methods with shallow App | Should match snapshot to avoid sudden/unnecessary changes 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <MultiSelectBox
+    selectBoxData={
+      Array [
+        Object {
+          "key": "corn",
+          "text": "Corn",
+          "value": "Corn",
+        },
+        Object {
+          "key": "capsicum",
+          "text": "Capsicum",
+          "value": "Capsicum",
+        },
+        Object {
+          "key": "onion",
+          "text": "Onions",
+          "value": "Onions",
+        },
+        Object {
+          "key": "paneer",
+          "text": "Paneer",
+          "value": "Paneer",
+        },
+      ]
+    }
+    selectedItems={[Function]}
+  />
+</div>
+`;
